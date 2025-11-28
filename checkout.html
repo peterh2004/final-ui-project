@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rustic Bean - Your Order</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="brand">
+                <a href="index.html" class="brand-link">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="The Rustic Bean Logo">
+                    </div>
+                    <div class="brand-text">
+                        <h1 class="brand-name">The Rustic Bean</h1>
+                        <p class="brand-tagline">Est. 1952 • Artisan Coffee House</p>
+                    </div>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Menu</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="reviews.html" class="nav-link">Reviews</a>
+            </nav>
+            <a href="checkout.html" class="cart-button">
+                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1.5" y="1.5" width="41" height="41" rx="8" fill="#F5EBD7" stroke="#2C2C2C" stroke-width="2"/>
+                    <rect x="6" y="6" width="32" height="32" rx="4" fill="#6B4423"/>
+                    <g fill="#E8DCC8">
+                        <path d="M12 14.5H14L15 17H12V14.5Z"/>
+                        <rect x="11" y="14" width="4" height="2.5" rx="1"/>
+                        <path d="M15 17H31L28.5 26H17.5L15 17Z"/>
+                        <circle cx="19" cy="29" r="2.5"/>
+                        <circle cx="27" cy="29" r="2.5"/>
+                    </g>
+                </svg>
+                <span class="cart-badge">0</span>
+            </a>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content checkout-content">
+            <!-- Order Title -->
+            <div class="menu-header">
+                <h2 class="menu-title">Your Order</h2>
+                <div class="menu-line"></div>
+            </div>
+
+            <!-- Cart Container -->
+            <div class="cart-container">
+                <p class="cart-empty-message">Your cart is empty</p>
+                <a href="index.html" class="browse-menu-btn">Browse Menu</a>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-text">© 1952-2025 The Rustic Bean. Brewing memories since 1952.</p>
+        </footer>
+    </div>
+    <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rustic Bean - Sweets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="brand">
+                <a href="index.html" class="brand-link">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="The Rustic Bean Logo">
+                    </div>
+                    <div class="brand-text">
+                        <h1 class="brand-name">The Rustic Bean</h1>
+                        <p class="brand-tagline">Est. 1952 • Artisan Coffee House</p>
+                    </div>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link active">Menu</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="reviews.html" class="nav-link">Reviews</a>
+            </nav>
+            <a href="checkout.html" class="cart-button">
+                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Outer cream rounded rect with dark border -->
+                    <rect x="1.5" y="1.5" width="41" height="41" rx="8" fill="#F5EBD7" stroke="#2C2C2C" stroke-width="2"/>
+                    <!-- Inner brown background -->
+                    <rect x="6" y="6" width="32" height="32" rx="4" fill="#6B4423"/>
+                    <!-- Shopping cart icon - cream colored, filled style -->
+                    <g fill="#E8DCC8">
+                        <!-- Cart handle bar -->
+                        <path d="M12 14.5H14L15 17H12V14.5Z"/>
+                        <rect x="11" y="14" width="4" height="2.5" rx="1"/>
+                        <!-- Cart basket -->
+                        <path d="M15 17H31L28.5 26H17.5L15 17Z"/>
+                        <!-- Cart wheels -->
+                        <circle cx="19" cy="29" r="2.5"/>
+                        <circle cx="27" cy="29" r="2.5"/>
+                    </g>
+                </svg>
+                <span class="cart-badge">0</span>
+            </a>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Menu Title -->
+            <div class="menu-header">
+                <h2 class="menu-title">Our Menu</h2>
+                <div class="menu-line"></div>
+            </div>
+
+            <!-- Category Tabs -->
+            <div class="category-tabs">
+                <a href="index.html" class="tab-button">Coffee</a>
+                <a href="pastries.html" class="tab-button">Pastries</a>
+                <a href="sandwiches.html" class="tab-button">Sandwiches</a>
+                <a href="sweets.html" class="tab-button active">Sweets</a>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="products-grid">
+                <!-- Fudge Brownie -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/brownie.png" alt="Fudge Brownie">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-header">
+                            <h3 class="product-name">Fudge Brownie</h3>
+                            <span class="product-price">$4.25</span>
+                        </div>
+                        <div class="product-divider"></div>
+                        <p class="product-description">Brownie with walnuts and a dusting of powdered sugar</p>
+                        <button class="add-to-order-btn">Add to Order</button>
+                    </div>
+                </div>
+
+                <!-- Chocolate Chip Cookies -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cookies-37fe39.png" alt="Chocolate Chip Cookies">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-header">
+                            <h3 class="product-name">Chocolate Chip Cookies</h3>
+                            <span class="product-price">$3.50</span>
+                        </div>
+                        <div class="product-divider"></div>
+                        <p class="product-description">Freshly baked cookies with melty chocolate chips</p>
+                        <button class="add-to-order-btn">Add to Order</button>
+                    </div>
+                </div>
+
+                <!-- French Macarons -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/macarons-23cd1a.png" alt="French Macarons">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-header">
+                            <h3 class="product-name">French Macarons</h3>
+                            <span class="product-price">$12.00</span>
+                        </div>
+                        <div class="product-divider"></div>
+                        <p class="product-description">Delicate almond meringue cookies with buttercream filling</p>
+                        <button class="add-to-order-btn">Add to Order</button>
+                    </div>
+                </div>
+
+                <!-- Carrot Cake Slice -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/carrot-cake-69f6c4.png" alt="Carrot Cake Slice">
+                    </div>
+                    <div class="product-details">
+                        <div class="product-header">
+                            <h3 class="product-name">Carrot Cake Slice</h3>
+                            <span class="product-price">$5.50</span>
+                        </div>
+                        <div class="product-divider"></div>
+                        <p class="product-description">Spiced carrot cake with cream frosting, walnuts, and raisins</p>
+                        <button class="add-to-order-btn">Add to Order</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-text">© 1952-2025 The Rustic Bean. Brewing memories since 1952.</p>
+        </footer>
+    </div>
+    <script src="cart.js"></script>
+</body>
+</html>
+
